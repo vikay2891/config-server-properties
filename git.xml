@@ -1,0 +1,38 @@
+
+vikas.bhardwaj3@BLR1-LHP-N64485 MINGW64 ~/Desktop
+
+$ ssh-keygen -t rsa -b 4096 -C "bhardwajvikas93@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/vikas.bhardwaj3/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/vikas.bhardwaj3/.ssh/id_rsa.
+Your public key has been saved in /c/Users/vikas.bhardwaj3/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:u9aeU+pH8muq+Rx/Sagq0tX/AmD7E+ka+3EZJ3mMUNo bhardwajvikas93@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|            .    |
+|           +     |
+|          o E    |
+|        o  . +   |
+|       .S+ .=.+  |
+|        o.* +*.  |
+|     . .o+o@o. . |
+|    . o .*O** o  |
+|     . oBOO*o=.  |
++----[SHA256]-----+
+
+vikas.bhardwaj3@BLR1-LHP-N64485 MINGW64 ~/Desktop
+$ eval $(ssh-agent -s)
+Agent pid 21404
+
+vikas.bhardwaj3@BLR1-LHP-N64485 MINGW64 ~/Desktop This is to save key in file
+$ ssh-add ~/.ssh/id_rsa
+Identity added: /c/Users/vikas.bhardwaj3/.ssh/id_rsa (bhardwajvikas93@gmail.com)
+
+vikas.bhardwaj3@BLR1-LHP-N64485 MINGW64 ~/Desktop   this will copy to clipboard
+$ clip < ~/.ssh/id_rsa.pub
+
+vikas.bhardwaj3@BLR1-LHP-N64485 MINGW64 ~/Desktop
+$
